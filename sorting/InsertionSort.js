@@ -6,6 +6,7 @@ const insertionSort = (list) => {
       list[hole] = list[hole - 1];
       hole--;
     }
+    
     list[hole] = value;
   }
   return list;
