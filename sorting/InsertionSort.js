@@ -1,17 +1,13 @@
-const insertionSort = (arr) => {
-  const list = [...arr];
-
-  for (let i = 1; i < arr.length; i++) {
+const insertionSort = (list) => {
+  for (let i = 1; i < list.length; i++) {
     let value = list[i];
     let hole = i;
-
     while (hole > 0 && list[hole - 1] > value) {
       list[hole] = list[hole - 1];
       hole--;
     }
     list[hole] = value;
   }
-
   return list;
 };
 
