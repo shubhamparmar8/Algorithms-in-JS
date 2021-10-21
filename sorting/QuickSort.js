@@ -1,6 +1,7 @@
 const partition = (list, start, end) => {
   const pivot = list[end];
   let pIndex = start;
+
   for (let i = start; i < end; i++) {
     if (list[i] <= pivot) {
       // swap
@@ -19,6 +20,7 @@ const quickSort = (list, start, end) => {
     quickSort(list, start, pIndex - 1);
     quickSort(list, pIndex + 1, end);
   }
+
   return list;
 };
 
