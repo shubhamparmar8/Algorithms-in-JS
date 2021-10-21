@@ -6,6 +6,7 @@ const selectionSort = (list) => {
         minIndex = j;
       }
     }
+    
     // swap
     [list[minIndex], list[i]] = [list[i], list[minIndex]];
   }

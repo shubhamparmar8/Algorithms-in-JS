@@ -3,10 +3,12 @@ const partition = (list, start, end) => {
   let pIndex = start;
   for (let i = start; i < end; i++) {
     if (list[i] <= pivot) {
+      // swap
       [list[i], list[pIndex]] = [list[pIndex], list[i]];
       pIndex++;
     }
   }
+  // swap
   [list[pIndex], list[end]] = [list[end], list[pIndex]];
   return pIndex;
 };
